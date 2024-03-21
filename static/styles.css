@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #1695DA; 
+    margin: 0 auto;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.title-box {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    z-index: 999;
+    top: 180px;
+    box-shadow: -13px 13px 2px 1px rgb(0, 0, 0, .2);
+}
+h1.title, p.slogan, li {
+    font-family: 'kenia', cursive;
+}
+header h1 {
+    font-size: 60px;
+}
+header p {
+    font-size: 20px;
+}
+
+/* slider */
+
+div.slides {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: calc(500px * 4);
+    height: 720px;
+    animation: glisse 15s infinite ease;
+    
+}
+div.slider {
+    overflow: hidden;
+}
+
+div.slide {
+    
+    opacity: 0.5;
+}
+
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-500px);
+    }
+    66% {
+        transform: translateX(-500px);
+    }
+    100% { transform: translateX(0);
+
+    }
+}
+
+/* navigation menu */
+
+nav.menu ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.3s all;
+}
+
+
+.pizza {
+    background: url(./images/pizza-banner.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.salade {
+    background: url(./images/salad-banner.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.burger {
+    background: url(./images/burger-banner.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boisson {
+    background: url(./images/boisson-banner.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.nav-items {
+   flex: 1;
+   height: 300px;
+}
+nav.menu ul {
+    display: flex;
+   
+}
+nav.menu ul li a {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    
+}
+
+nav.menu {
+    width: calc(500px * 4);
+    
+   
+}
+.section-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-130px);
+}
+nav.menu ul li:hover {
+    transform: scale(0.95);
+    transition: 0.3s all;
+}
+/* section des plats */
+
+.item {
+   background-color: white;
+    margin: 20px;
+    display: flex;
+    cursor: pointer;
+}
+section {
+    padding: 50px;
+}
+section img {
+    width: 300px;
+}
+.item-info {
+    padding: 20px;
+    line-height: 40px;
+}
+.item-info h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+.item-info hr {
+    margin: 10px 0 10px 0;
+}
+p.price {
+    font-weight: bold;
+    font-size: 22px;
+}
+.item:hover {
+   transition: 0.3s all;
+   box-shadow: -13px 13px 2px 1px rgb(0, 0, 0, .2);
+}
+.item:hover {
+    transform: scale(1.1);
+}
+html {
+    scroll-behavior: smooth;
+}
